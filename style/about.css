@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  } 
+.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+body {
+    display: grid;
+    grid-template-rows: 591px 498px 362px;
+    row-gap: 20px;
+    background-color: #D1D5DB;
+}
+
+.sec-1 {
+    background-color: white;
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+}
+
+.left,
+.right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.left {
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 133px;
+}
+
+.left>h1 {
+    color: var(--Gray900, #111827);
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 140%;
+    letter-spacing: 0.18px;
+    width: 100%;
+    height: auto;
+}
+
+.left>p {
+    color: var(--Gray500, #6B7280);
+    height: auto;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.12px;
+    width: 90%;
+}
+
+button {
+    width: 159px;
+    height: 70px;
+    color: var(--Main, #010101);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid var(--Main, #010101);
+}
+
+button:hover {
+    background: linear-gradient(120deg, rgba(210, 46, 255, 1) 0%, rgba(43, 212, 255, 1) 80%, rgba(27, 226, 255, 1) 100%);
+    border: 0;
+    color: white;
+    transition: all 500ms;
+
+}
+
+.right {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.image {
+    width: 45%;
+}
+
+.right>img:first-child {
+    border-radius: 25px;
+    height: 350px;
+    width: 50%;
+}
+
+.right>.image>img:first-child {
+    width: 100%;
+    height: 199px;
+}
+
+.right>.image>img:last-child {
+    width:100%;
+    height: 180px;
+    margin-top: 24px;
+}
+
+.sec-2 {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.imj{
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+
+}
+.ano,
+.images {
+    width: 48%;
+    height: 100%;
+
+}
+
+.ano>p {
+    width: 100%;
+  
+}
+
+.images {
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.images>img:first-child {
+    width: 90%;
+    border-radius: 25px;
+    height: 40%;
+}
+
+.images>.imj>img:first-child , 
+.images>.imj>img:last-child  {
+    border-radius: 25px;
+  height: 80%;
+    width: 48%;
+}
+
+.sec-3{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arsh{
+    display: flex;
+    flex-direction: column;
+align-items: center;
+}
+.arsh>h1{
+    color: #000;
+height: 50px;
+font-weight: 900;
+font-family: Poppins;
+font-size: 36px;
+font-style: normal;
+line-height: 140%;
+letter-spacing: 0.18px;
+}
+.arsh>p{
+    color: var(--Gray500, #6B7280);
+height: 34px;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%;
+letter-spacing: 0.12px;
+margin-top: 20px;
+}
+.count{
+    height: 102px;
+    margin-top: 32px;
+width: 100%;
+}
+.numb , .word{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+
+}
+.numb>div{
+    color: var(--Gray900, #111827);
+font-family: Poppins;
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: 45px;
+width: calc(100% / 3);
+
+}
+.word>div{
+    color: var(--Gray500, #6B7280);
+font-family: Poppins;
+font-size: 21px;
+font-style: normal;
+font-weight: 400;
+line-height: 45px; 
+width: calc(100% /3);
+}
+
+@media (max-width:750px) {
+    .right , .images{
+        display: none;
+    }
+    .left{
+        width: 90%;
+        padding-left: 10%;
+    }
+    .sec-1 , .sec-2{
+        /* background-image: url("../image/Screen.png");
+        background-repeat: no-repeat;
+        background-size: 100%; */
+    }
+    .left>p , .word>div{
+        font-size: 20px;
+    }
+    .arsh>p {
+        height: auto;
+        font-size: 16px;
+    }
+    .arsh{
+      
+            width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width:455px) {
+    .arsh>p {
+       display: none;
+    }
+    .arsh>h1 , .numb>div{
+        font-size: 30px;
+    }
+}

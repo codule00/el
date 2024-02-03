@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+footer{
+  background-color: #D7E3FB;
+
+}
+
+a{
+  text-decoration-line: none;
+
+}
+.main-footer{
+  display: flex;
+  justify-content: space-between;
+
+
+}
+.main-footer>div{
+  height: 100%;
+
+}
+.one,.two ,.th{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 65px;
+  flex-shrink: 1;
+
+}
+.th{
+  padding-right: 26px;
+}
+li{
+  /* width: 150px; */
+  height: 48px;
+font-family:'Poppins'  , sans-serif;
+font-size: 14px;
+color: #6B7280;
+font-weight: 500;
+line-height: 27px; 
+letter-spacing: 0.09px;
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+.lk{
+  font-size: 18px;
+  font-weight: 600;
+ color:#111827 ;
+ width: 75px;
+ height: 40px;
+ margin-bottom: 15px;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 53px;
+  margin-left: 10px;
+
+}
+.main>p{
+  color: #6B7280;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+letter-spacing: 0.07px;
+width: 272px;
+margin-left: 20px;
+height: 42px;
+margin-top: 17px;
+
+}
+.icon{
+  margin-top: 12px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-around;
+  width: 55%;
+}
+.line {
+  width: 80%;
+  height: 1px;
+  margin-left: 15%;
+  background: #d1d5db;
+}
+.copyright {
+  margin-top: 20px;
+  text-align: center;
+  height: 50px;
+  background-color: #D7E3FB;
+
+}
+.fir{
+  display: flex;
+  justify-content: space-between;
+  width: 94%;
+
+}
+ul>li:first-child{
+  color: var(--Gray900, #111827);
+height: 24px;
+width: 58px;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%; 
+letter-spacing: 0.08px;
+}
+.fir>span{
+margin-top: 10px;
+}
+
+.arow{
+  margin: 7px 0 7px 26px;
+
+}
+.me-1{
+  display: none;
+  margin-left: 22px;
+  width: 75%;
+}
+.fir:hover{
+  color: #0F4ABD;
+  }
+@media (max-width:650px) {
+  .one,.two ,.th{
+display: none;
+  }
+.icon{
+  margin: 0 0 20px;
+
+}
+
+  .main{
+    width: 50%;
+    height: 115px;
+      }
+      .main-footer{
+        flex-direction: column;
+      }
+      .me-1{
+        display: inline;
+    
+      }
+}
