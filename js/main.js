@@ -15,7 +15,7 @@ function dl() {
         dlBox[2].remove()
       }
 }
-
+dl()
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
