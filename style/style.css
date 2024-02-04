@@ -471,13 +471,13 @@ article {
     }
     .topic {
         font-size: 37px;
-        margin-left: 10px;
+        margin-left: 5px;
     }
     .left>p {
         font-size: 24px;
         text-align: center;
-        width: 67%;
-        margin-left: 0;
+        width: 90%;
+        margin: 0 0 30px;
     }
     .left>.btn {
         width: 50%;
@@ -525,10 +525,11 @@ article {
 }
 .owl-item {
 
-    margin-right: 5px;
+    margin-right: 0px;
 }
 .feedback-box{
-    width: 270px !important;
+    width: 370px !important;
+    margin: auto;
 }
     .rec>div,
     .why>div ,.feedback>div{
