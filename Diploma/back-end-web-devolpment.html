@@ -20,6 +20,41 @@
 </head>
 
 <body>
+
+
+<!-- Messenger المكون الإضافي "دردشة" Code -->
+<div id="fb-root"></div>
+
+<!-- Your المكون الإضافي "دردشة" code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "134699899717768");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v19.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/ar_AR/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
     <!-- loading page -->
     <div class="loader">
         <div class="loading">
@@ -368,131 +403,124 @@ after diploma + English course + Freelancing Workshop + Soft skills Workshop
 
     </section>
 
+
     <footer>
         <div class="main-footer">
-            <div class="main">
-                <img src="../image/logo.png" alt="" width="250px" />
-                <p>Let's create the future together</p>
-                <div class="icon">
-                    <a href=""> <i class="fa-brands fa-facebook fa-xl " style="color: #0ba3d5"></i></a>
-                    <a href=""> <i class="fa-brands fa-linkedin fa-xl" style="color: #005eff"></i></a>
-                    <a href=""><i class="fa-solid fa-envelope fa-xl" style="color: #ff0000"></i></a>
-                </div>
+          <div class="main">
+            <img src="image/logo.png" alt="" width="250px" />
+            <p>Let's create the future together</p>
+            <div class="icon">
+              <a href="https://www.facebook.com/codulefortech"> <i class="fa-brands fa-facebook fa-xl " style="color: #0ba3d5"></i></a>
+    
+              <a href="mailto:support@codule.com"><i class="fa-solid fa-envelope fa-xl" style="color: #ff0000"></i></a>
             </div>
-            <div class="one">
-                <ul>
-                    <li class="lk">Courses</li>
-                    <a href="">
-                        <li>Web Devolpment</li>
-                    </a>
-                    <a href="">
-                        <li>Mobile Devolpment</li>
-                    </a>
-                    <a href="">
-                        <li>Computer Science</li>
-                    </a>
-                    <a href="">
-                        <li>Artificial Intelligence</li>
-                    </a>
-                </ul>
-            </div>
-            <div class="two">
-                <ul>
-                    <li class="lk">Company</li>
-                    <a href="">
-                        <li>Contact Us</li>
-                    </a>
-                    <a href="">
-                        <li>Email</li>
-                    </a>
-                    <a href="">
-                        <li>About Us</li>
-                    </a>
-                    <a href="">
-                        <li>Tech With Us</li>
-                    </a>
-                </ul>
-            </div>
-            <div class="th">
-                <ul>
-                    <li class="lk">policies</li>
-                    <a href="">
-                        <li>Contact Us</li>
-                    </a>
-                    <a href="">
-                        <li>Email</li>
-                    </a>
-                    <a href="">
-                        <li>About Us</li>
-                    </a>
-                    <a href="">
-                        <li>Tech With Us</li>
-                    </a>
-                </ul>
-            </div>
-            <div class="me-1">
-                <ul>
-                    <li>Courses</li>
-                    <div class="arow">
-                        <a href="">
-                            <li>Web Devolpment</li>
-                        </a>
-                        <a href="">
-                            <li>Mobile Devolpment</li>
-                        </a>
-                        <a href="">
-                            <li>Computer Science</li>
-                        </a>
-                        <a href="">
-                            <li>Artificial Intelligence</li>
-                        </a>
-                    </div>
-                </ul>
-            </div>
-            <div class="me-1">
-                <ul>
-                    <li>Company</li>
-                    <div class="arow">
-                        <a href="">
-                            <li>Contact Us</li>
-                        </a>
-                        <a href="">
-                            <li>Email</li>
-                        </a>
-                        <a href="">
-                            <li>About Us</li>
-                        </a>
-                        <a href="">
-                            <li>Tech With Us</li>
-                        </a>
-                    </div>
-                </ul>
-            </div>
-            <div class="me-1">
-                <ul>
-                    <li>Courses</li>
-                    <div class="arow">
-                        <a href="">
-                            <li>Web Devolpment</li>
-                        </a>
-                        <a href="">
-                            <li>Mobile Devolpment</li>
-                        </a>
-                        <a href="">
-                            <li>Computer Science</li>
-                        </a>
-                        <a href="">
-                            <li>Artificial Intelligence</li>
-                        </a>
-                    </div>
-                </ul>
-            </div>
+          </div>
+          <div class="one">
+            <ul>
+              <li class="lk">Courses</li>
+              <a href="diploma/full-stack-web-devolpment">
+                <li>Web Devolpment</li>
+              </a>
+              <a href="diploma/front-end-web-devolpment">
+                <li>Front end Diploma</li>
+              </a>
+              <a href="diploma/back-end-web-devolpment">
+                <li>Back end Diploma</li>
+              </a>
+              <a href="diploma/Business-English">
+                <li>Business English course</li>
+              </a>
+            </ul>
+          </div>
+          <div class="two">
+            <ul>
+              <li class="lk">Company</li>
+              <a href="contact">
+                <li>Contact Us</li>
+              </a>
+              <a href="mailto:support@codule.com">
+                <li>Email</li>
+              </a>
+              <a href="about">
+                <li>About Us</li>
+              </a>
+              <a href="contact">
+                <li>Tech With Us</li>
+              </a>
+            </ul>
+          </div>
+          <div class="th">
+            <ul>
+              <li class="lk">policies</li>
+              <a href="policies">
+                <li>Policies and privacy</li>
+              </a>
+            
+            </ul>
+          </div>
+          <div class="me-1">
+            <ul>
+              <li>Courses</li>
+    
+              <div class="arow">
+                <a href="diploma/full-stack-web-devolpment">
+                  <li>Web Devolpment</li>
+                </a>
+                <a href="diploma/front-end-web-devolpment">
+                  <li>Front end Diploma</li>
+                </a>
+                <a href="diploma/back-end-web-devolpment">
+                  <li>Back end Diploma</li>
+                </a>
+                <a href="diploma/Business-English">
+                  <li>Business English course</li>
+                </a>
+              </div>
+    
+            </ul>
+          </div>
+          <div class="me-1">
+            <ul>
+              <li>Company</li>
+              <div class="arow">
+                <a href="contact">
+                  <li>Contact Us</li>
+                </a>
+                <a href="mailto:support@codule.com">
+                  <li>Email</li>
+                </a>
+                <a href="about">
+                  <li>About Us</li>
+                </a>
+                <a href="contact">
+                  <li>Tech With Us</li>
+                </a>
+              </div>
+    
+            </ul>
+          </div>
+    
+          <div class="me-1">
+            <ul>
+              <li>policies</li>
+              <div class="arow">
+                <a href="policies">
+                  <li>Policies and privacy</li>
+                </a>
+              </div>
+    
+            </ul>
+          </div>
+    
+    
         </div>
         <div class="line"></div>
         <div class="copyright">
-            Copyright © 2024 codule. All rights reserved.
+          Copyright © 2024 codule. All rights reserved.
         </div>
-    </footer>
+      </footer>
+    
+    
 
     <script src="../js/main.js"></script>
     <script src="../js/all.min.js"></script>
