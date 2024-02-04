@@ -112,7 +112,9 @@
   }
 
   /* loading page */
-
+a{
+  color: inherit;
+}
 main {
     margin-top: 134px;
     margin-left: 5.1%;

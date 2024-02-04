@@ -390,6 +390,21 @@ section {
         height: auto;
     }
 }
+@media (max-width:500px) {
+    .slider{
+        margin-left: 0;
+    }
+    .owl-item {
+        width: 340px !important;
+        margin-right: 45px;
+        margin-left: 12px;
+    }
+    
+    .feedback-box{
+        width: 370px !important;
+        margin: auto;
+    }
+}
 @media (max-width:370px) {
     .sec-1 {
         height: 650px;
