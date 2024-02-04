@@ -154,150 +154,159 @@ h2 {
     letter-spacing: 0.12px;
 }
 .owl-buttons {
-    position: absolute;
-    top: 50%;
-    width: 97%;
-    display: flex;
-    z-index: 10;
-    justify-content: space-between;
-    left: .8%;
+  position: absolute;
+  top: 50%;
+  width: 97%;
+  display: flex;
+  z-index: 10;
+  justify-content: space-between;
+  left: .8%;
 }
 .owl-pagination{
-    display: none;
+  display: none;
 }
 .fa-chevron-left,
 .fa-chevron-right{
-    border-radius: 50%;
-    opacity: .4;
-    width: 30px;
-    height: 35px;
-    cursor: pointer;
+  border-radius: 50%;
+  opacity: .4;
+  width: 30px;
+  height: 35px;
+  cursor: pointer;
 }
 .slider {
-    width: 98%;
-    height: 611px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    overflow-x: hidden;
-    margin-left: 32px;
+  width: 98%;
+  height: 611px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  margin-left: 32px;
 }
 .scroll::-webkit-scrollbar {
-    visibility: hidden;
+  visibility: hidden;
 }
 .courses {
-    width: 100%;
-    overflow-x: hidden;
-    position: relative;
-    margin: 1% 0;
+  width: 98%;
+  overflow-x: hidden;
+  position: relative;
+  margin: 1% 0;
 }
 .box:hover {
-    box-shadow: 2px 10px 10px rgba(175, 171, 171, 0.25);
-    transition: all 500ms;
-    transform: translateZ(1px);
+  box-shadow: 2px 10px 10px rgba(175, 171, 171, 0.25);
+  transition: all 500ms;
+  transform: translateZ(1px);
 }
 .owl-item {
-    width: 373px !important;
-    height: auto;
-    position: relative;
-    left: 0;
-    border-radius: 15px;
-    background-color: #F9FBFF;
-    margin: 30px 0;
-    transition: 0.5s;
-    margin-right: 20px;
+  width: 404px !important;
+
+  height: auto;
+  position: relative;
+  left: 0;
+  border-radius: 15px;
+  background-color: #F9FBFF;
+  margin: 30px 0;
+  transition: 0.5s;
+  margin-right: 50px;
 }
 .item>img {
-    width: -webkit-fill-available;
-    height: 266px;
-    border-radius: 15px;
+  width: -webkit-fill-available;
+  height: 266px;
+  border-radius: 15px;
 }
 .box-con {
-    margin-left: 24px;
+  margin-left: 24px;
 }
 .course-cat {
-    width: 77px;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 500;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 35px;
-    background: linear-gradient(120deg, rgba(210, 46, 255, 1) 0%, rgba(43, 212, 255, 1) 80%, rgba(27, 226, 255, 1) 100%);
-    border-radius: 15px;
-    text-align: center;
-    color: #ffffff;
+  width: 100px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 35px;
+  background: linear-gradient(120deg, rgba(210, 46, 255, 1) 0%, rgba(43, 212, 255, 1) 80%, rgba(27, 226, 255, 1) 100%);
+  border-radius: 15px;
+  text-align: center;
+  color: #ffffff;
 }
 .course-name {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
-    color: #010101;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 9px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #010101;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 9px;
 }
 .duration {
-    margin-top: 14px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 500;
+  margin-top: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
 }
 .rate {
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 500;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 15px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 15px;
 }
 .rate>span {
-    font-weight: 400;
+  font-weight: 400;
 }
 .stars {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
+  margin-right: 20px;
 }
 .enroll {
-    margin-top: 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .enroll>button {
-    width: 50%;
-    height: 50px;
-    border-radius: 15px;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    font-family: 'Poppins', sans-serif;
-    background-color: #0F4ABD;
-    border: 0;
+  width: 50%;
+  height: 50px;
+  border-radius: 15px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0F4ABD;
+  border: 0;
 }
 .enroll>button:hover {
-    background: linear-gradient(120deg, rgba(210, 46, 255, 1) 0%, rgba(43, 212, 255, 1) 80%, rgba(27, 226, 255, 1) 100%);
-    transition: all 500ms;
-    cursor: pointer;
+  background: linear-gradient(120deg, rgba(210, 46, 255, 1) 0%, rgba(43, 212, 255, 1) 80%, rgba(27, 226, 255, 1) 100%);
+  transition: all 500ms;
+  cursor: pointer;
 
 }
+.dn{
+  display: none;
+}
 .price {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 36px;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    width: 50%;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  width: 50%;
+}
+del{
+  text-decoration-color: red;
+      font-size: 16px;
 }
 .reveal{
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 1s all ease;
-  } 
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+} 
 .active{
-    transform: translateY(0);
-    opacity: 1;
-  }
+  transform: translateY(0);
+  opacity: 1;
+}
+
 @media (max-width:700px) {
     .owl-buttons{
         display: none;
@@ -309,10 +318,12 @@ h2 {
         margin-left: 0;
     }
     .owl-item {
-        width: 235px !important;
-        margin-right: 5px;
+      width: 340px !important;
+      margin-right: 32px;
+      margin-left: 12px;
+  }
     }
-    }
+
     @media (max-width:380px) {
         h1 {
             font-size: 20px;
