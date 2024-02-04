@@ -186,7 +186,7 @@ header {
     transform: translateZ(1px);
 }
 .owl-item {
-    width: 404px !important;
+    /* width: 404px !important; */
 
     height: auto;
     position: relative;
@@ -525,9 +525,11 @@ article {
     margin-left: 0;
 }
 .owl-item {
-
-    margin-right: 0px;
+    width: 340px !important;
+    margin-right: 32px;
+    margin-left: 32px;
 }
+
 .feedback-box{
     width: 370px !important;
     margin: auto;
