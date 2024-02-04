@@ -186,7 +186,7 @@ header {
     transform: translateZ(1px);
 }
 .owl-item {
-    /* width: 404px !important; */
+    width: 404px !important;
 
     height: auto;
     position: relative;
