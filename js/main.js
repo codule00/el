@@ -6,7 +6,15 @@ window.addEventListener("load" , ()=>{
   }, 2000);
 })
 
-
+function dl() {
+  let dlBox = document.getElementsByClassName("dn"),
+      screenWidth = window.innerWidth
+      if (screenWidth < 500) {
+        dlBox[0].remove()
+        dlBox[1].remove()
+        dlBox[2].remove()
+      }
+}
 
 
 function reveal() {
