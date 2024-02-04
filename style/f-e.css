@@ -10,6 +10,11 @@ body {
     overflow-x: hidden;
 }
 
+.loader{
+    display: flex;
+
+  }
+
 section {
     background-color: white;
 }
