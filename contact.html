@@ -27,21 +27,21 @@
     </div>
     <!-- loading page -->
     <nav>
-        <a href="../index.html"><img class="nav-img" src="../image/logo.png" alt="logo" /></a>
+        <a href="../"><img class="nav-img" src="../image/logo.png" alt="logo" /></a>
         <div class="items">
-            <a href="https://codule.com">
+            <a href="../">
                 <div>Home</div>
             </a>
-            <a href="#">
+            <a href="courses">
                 <div>Courses</div>
             </a>
-            <a href="#">
+            <a href="about">
                 <div>About Us</div>
             </a>
-            <a href="#">
+            <a href="contact">
                 <div>Contact Us</div>
             </a>
-            <a href="#">
+            <a href="contact">
                 <div>Tech With Us</div>
             </a>
         </div>
@@ -53,33 +53,33 @@
     </nav>
     <div class="items-bar" id="menu">
         <span id="span"> <i class="fa-solid fa-bars fa-xl"></i> </span>
-        <a href="https://codule.com">
+        <a href="../">
             <div>Home </div>
         </a>
-        <a href="#">
+        <a href="courses">
             <div>Courses</div>
         </a>
-        <a href="#">
+        <a href="about">
             <div>About Us</div>
         </a>
-        <a href="#">
+        <a href="contact">
             <div>Contact Us</div>
         </a>
-        <a href="#">
+        <a href="contact">
             <div>Tech With Us</div>
         </a>
     </div>
     <section>
         <img src="image/service.png" alt="">
-        <div class="form">
+        <form class="form"  onclick="sendEmail()">
             <h1>How Can We Help ?</h1>
             <div class="npu">
-                <input type="email" placeholder="  Email">
-                <input type="text" placeholder="  Subject">
-                <textarea placeholder="  Description"></textarea>
+                <input type="email" placeholder="  Email" id="email">
+                <input type="text" placeholder="  Subject" id="subject">
+                <textarea placeholder="  Description" id="description"></textarea>
                 <button>Send</button>
             </div>
-        </div>
+        </form>
     </section>
     <footer>
         <div class="main-footer">
@@ -215,5 +215,27 @@
     </footer>
     <script src="js/main.js"></script>
     <script src="js/all.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        
+function sendEmail() {
+  let email = document.getElementById("email").value;
+  let sub = document.getElementById("subject").value;
+  let description = document.getElementById("description").value;
+
+
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "mostafapepo000@hotmail.com",
+    Password : "6232C3EB94830C02467F177EF2FDAC654953",
+    To : 'mostafa-for-work@hotmail.com',
+    From : "mostafapepo000@gmail.com",
+    Subject : "contact form ",
+    Body : `  Email : ${email} <br>  sub : ${sub} <br> Message : ${description} <br>`
+}).then(
+  message => console.log(message)
+);
+}
+    </script>
 </body>
 </html>

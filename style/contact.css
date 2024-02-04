@@ -10,6 +10,11 @@ body {
   overflow-x: hidden;
 }
 
+.loader{
+
+  display: flex;
+
+}
 section {
   width: 95%;
   height: 627px;
@@ -91,7 +96,7 @@ textarea {
 input,
 textarea {
   border-radius: 10px;
-  border: 3px solid black;
+  border: 2px solid black;
   width: 90%;
   color: rgba(0, 0, 0, 0.5);
   font-family: Inter;
@@ -113,6 +118,8 @@ button {
   line-height: normal;
   background-color: #0f4abd;
   border-radius: 15px;
+  border: none;
+cursor: pointer;
 }
 
 button:hover {
