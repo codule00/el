@@ -6,6 +6,14 @@ window.addEventListener("load" , ()=>{
   }, 2000);
 })
 
+document.addEventListener("DOMContentLoaded", function() {
+  var links = document.querySelectorAll('a[href$=".html"]');
+  links.forEach(function(link) {
+      link.href = link.href.replace(".html", "");
+  });
+});
+
+
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 
