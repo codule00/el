@@ -76,7 +76,7 @@ header {
     animation-name: right;
     animation-duration: 2s;
      animation-timing-function: linear;
-     animation-delay: 2s;
+
      animation-fill-mode: forwards;
 }
 .image>img {
