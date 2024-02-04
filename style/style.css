@@ -526,8 +526,8 @@ article {
 }
 .owl-item {
     width: 340px !important;
-    margin-right: 42px;
-    margin-left: 22px;
+    margin-right: 32px;
+    margin-left: 12px;
 }
 
 .feedback-box{
@@ -547,6 +547,7 @@ article {
     }
     .topic {
         font-size: 20px;
+        margin-left: 6px;
     }
     .left>.p {
         width: 90%;
