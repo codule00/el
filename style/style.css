@@ -411,14 +411,10 @@ article {
     height: auto;
     margin-left: 24px;
 }
-.f-info>img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 16px;
-    position: relative;
-    top: 12px;
+.f-info>div{
+    font-size: 25px;
 }
+
 .f-info>img+div {
     font-size: 18px;
     line-height: 27px;
@@ -432,13 +428,13 @@ article {
 }
 .feedback-box>p {
     margin-top: 24px;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 21px;
     letter-spacing: 0.5%;
     font-family: 'Poppins', sans-serif;
     margin-top: 24px;
-    margin-left: 24px;
+    margin-right: 24px;
     width: auto;
     height: auto;
     margin-bottom: 5%;
