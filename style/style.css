@@ -375,6 +375,7 @@ article {
 }
 
 /* end why sec */
+
 .feedback {
     margin: 5% 0px 25px 5%;
 }
@@ -445,6 +446,8 @@ article {
 .feedback-box>.stars {
     margin-left: 24px;
 }
+
+
 
 /* **************** */
 @media (max-width:1265px) {
