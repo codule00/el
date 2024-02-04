@@ -1,10 +1,10 @@
-window.addEventListener("load" , ()=>{
-  const loader = document.querySelector(".loader");
+// window.addEventListener("load" , ()=>{
+//   const loader = document.querySelector(".loader");
   
-  setTimeout(() => {
-    loader.style.display ="none"
-  }, 2000);
-})
+//   setTimeout(() => {
+//     loader.style.display ="none"
+//   }, 2000);
+// })
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
