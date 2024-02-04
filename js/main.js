@@ -7,15 +7,12 @@ window.addEventListener("load" , ()=>{
 })
 
 function dl() {
+  let dlBox = document.getElementsByClassName("dn"),
       screenWidth = window.innerWidth
       if (screenWidth < 500) {
-        let dlBox = document.querySelectorAll(".owl-item")
-        if (dlBox.length >=3) {
-          for (let i = dlBox.length -1 ; i >=dlBox.length-3 ; i--) {
-            dlBox[i].remove()
-          }
-        }
-
+        dlBox[0].remove()
+        dlBox[1].remove()
+        dlBox[2].remove()
       }
 }
 dl()
