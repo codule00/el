@@ -533,13 +533,13 @@ article {
     margin-left: 0;
 }
 .owl-item {
-    width: 340px !important;
+    /* width: 340px !important;
     margin-right: 32px;
-    margin-left: 12px;
+    margin-left: 12px; */
 }
 
 .feedback-box{
-    width: 370px !important;
+    width: 360px !important;
     margin: auto;
 }
     .rec>div,
