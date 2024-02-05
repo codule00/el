@@ -102,6 +102,7 @@ section {
 .imk>img:last-child {
     position: absolute;
     width: 43%;
+    border-radius: 25px;
 }
 
 .sec-2 {
