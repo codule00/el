@@ -442,7 +442,9 @@ article {
     margin-left: 24px;
 }
 
-
+.feedback-box>p:first-child{
+    font-size: 18px;
+}
 
 /* **************** */
 @media (max-width:1265px) {
