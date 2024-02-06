@@ -188,8 +188,8 @@ header {
     transform: translateZ(1px);
 }
 .owl-item {
-    width: 395px !important;
-    height: auto;
+    width: 375px !important;
+        height: auto;
     position: relative;
     left: 0;
     border-radius: 15px;
