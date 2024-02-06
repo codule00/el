@@ -107,15 +107,15 @@
         </div>
     </section>
 
-    <section class="sec-3 reveal" >
+    <section class="sec-3 reveal" id="counter">
         <div class="arsh">
             <h1>Our Achievements</h1>
             <p> </p>
             <div class ="count">
                 <div class="numb">
-                    <div class="countv">9+</div> 
-                    <div  class="countv">12+</div>
-                    <div  class="countv">2200+</div>
+                    <div class="countv"></div> 
+                    <div  class="countv">12</div>
+                    <div  class="countv">2200</div>
                   
                 </div>
                 <div class="word">
@@ -247,7 +247,65 @@
   </footer>
 
 <script>
+let counterSec = document.getElementById("counter")
+if (counterSec.classList.contains = "active") {
+  let count = document.querySelectorAll(".countv")
+  countOne = count[0].textContent = "0"
+  ParOne = parseInt(count[0].textContent = "0")
+  countTwo =count[1].textContent = "0"
+  ParTwo = parseInt(count[1].textContent = "0")
+  countThree =count[2].textContent = "0"
+  ParThree = parseInt(count[2].textContent = "0")
+
+  setTimeout(() => {
+        let ParOne = parseInt(count[0].textContent);
+
+        const intervalIdOne = setInterval(() => {
+            if (ParOne < 9) {
+                ParOne++;
+                count[0].textContent = ParOne.toString() + "+";
+            }
+
+            if (ParOne === 9) {
+                clearInterval(intervalIdOne);
+            }
+        }, 400);
+    }, 2000);  // Delay for Counter 1: 1000ms (1 second)
+
+    // Counter 2
+    setTimeout(() => {
+        let ParTwo = parseInt(count[1].textContent);
+
+        const intervalIdTwo = setInterval(() => {
+            if (ParTwo < 14) {
+                ParTwo++;
+                count[1].textContent = ParTwo.toString() + "+";
+            }
+
+            if (ParTwo === 22) {
+                clearInterval(intervalIdTwo);
+            }
+        }, 600);
+    }, 1000);  // Delay for Counter 2: 2000ms (2 seconds)
+
+    // Counter 3
+    setTimeout(() => {
+        let ParThree = parseInt(count[2].textContent);
+
+        const intervalIdThree = setInterval(() => {
+            if (ParThree < 2500) {
+                ParThree++;
+                count[2].textContent = ParThree.toString() + "+";
+            }
+
+            if (ParThree === 2500) {
+                clearInterval(intervalIdThree);
+            }
+        }, 20);
+    }, 10);  // Delay for Counter 3: 3000ms (3 seconds)
+}
   
+
 </script>
 <!-- Messenger المكون الإضافي "دردشة" Code -->
 <div id="fb-root"></div>
