@@ -433,11 +433,10 @@ article {
     line-height: 21px;
     letter-spacing: 0.5%;
     font-family: 'Poppins', sans-serif;
-    margin: 24px;
+    margin: 24px 24px  0;
 
     width: auto;
     height: auto;
-    margin-bottom: 5%;
 }
 .feedback-box>.stars {
     margin-left: 24px;
@@ -532,15 +531,10 @@ article {
 .slider{
     margin-left: 0;
 }
-.owl-item {
-    /* width: 340px !important;
-    margin-right: 32px;
-    margin-left: 12px; */
-}
+
 
 .feedback-box{
     width: 360px !important;
-    margin: auto;
 }
     .rec>div,
     .why>div ,.feedback>div{

@@ -204,7 +204,6 @@ section {
 
 .cont {
     display: flex;
-    width: 68%;
     height: 60px;
     margin-left: 22px;
 }
