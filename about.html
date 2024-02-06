@@ -248,7 +248,45 @@
 
 
     
-
+  script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+  <script>
+      // Function to start the counter
+      function startCounter() {
+          // Set interval to increment the counters every second (1000 milliseconds)
+          var intervalId = setInterval(function () {
+              // Increment the counters
+              incrementCounter("counter1");
+              incrementCounter("counter2");
+              incrementCounter("counter3");
+          }, 1000);
+  
+          // Stop the interval when the mouse enters the counter container
+          document.getElementById("counterContainer").addEventListener("mouseenter", function () {
+              clearInterval(intervalId);
+          });
+      }
+  
+      // Function to increment the counter with the given id
+      function incrementCounter(counterId) {
+          var counterElement = document.getElementById(counterId);
+          var currentValue = parseInt(counterElement.innerText);
+          // Increment the value and keep the "+" sign
+          counterElement.innerText = (currentValue + 1) + "+";
+      }
+  
+      // Set up Waypoint to trigger when the counter section enters the viewport
+      var counterSection = document.getElementById('counterSection');
+      var waypoint = new Waypoint({
+          element: counterSection,
+          handler: function () {
+              // Start the counter when the section is in view
+              startCounter();
+              // Destroy the Waypoint to avoid triggering multiple times
+              this.destroy();
+          },
+          offset: '50%' // You can adjust the offset as needed
+      });
+  </script>
 <!-- Messenger المكون الإضافي "دردشة" Code -->
 <div id="fb-root"></div>
 
