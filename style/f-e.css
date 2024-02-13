@@ -71,7 +71,7 @@ section {
     justify-content: space-between;
 }
 
-.btn>button {
+.btn>a , .btn>a>button{
     width: 128px;
     color: white;
     height: 56px;
@@ -83,10 +83,11 @@ section {
     font-family: 'Poppins', sans-serif;
 }
 
-.btn>button:hover {
+.btn>a:hover , .btn>a>button:hover{
     background: linear-gradient(120deg, rgba(210, 46, 255, 1) 0%, rgba(43, 212, 255, 1) 80%, rgba(27, 226, 255, 1) 100%);
     border: 0;
     color: white;
+    cursor: pointer;
 }
 
 .imk>img {
